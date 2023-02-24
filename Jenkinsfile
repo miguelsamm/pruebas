@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('version') {
       steps {
-        sh 'pwsh --version'
+        sh 'dotnet --version'
       }
     }
     stage('hello') {
