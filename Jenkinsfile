@@ -3,12 +3,12 @@ pipeline {
   stages {
     stage('version') {
       steps {
-        sh 'dotnet --version'
+        sh 'powershell hello.ps1'
       }
     }
     stage('hello') {
       steps {
-        sh 'pwsh hello.ps1'
+        sh 'powershell hello.ps1'
       }
     }
   }
