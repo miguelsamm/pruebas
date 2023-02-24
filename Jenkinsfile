@@ -8,7 +8,7 @@ pipeline {
     }
     stage('hello') {
       steps {
-        powershell './scriptparam.ps1 ${nombre} ${apellido}'
+        powershell './scriptparam.ps1 ${params.nombre} ${apellido}'
       }
     }
   }
