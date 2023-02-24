@@ -1,2 +1,5 @@
 #!/usr/bin/pwsh -Command
-echo "Hello World!"
+Write-Host "Hello World!"
+Write-Host "Hola"
+$suma = 4 + 5
+Write-Host $suma
