@@ -3,12 +3,12 @@ pipeline {
   stages {
     stage('version') {
       steps {
-        sh 'powershell hello.ps1'
+        powershell 'hello.ps1'
       }
     }
     stage('hello') {
       steps {
-        sh 'powershell hello.ps1'
+        powershell 'hello.ps1'
       }
     }
   }
